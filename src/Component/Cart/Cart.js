@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import CartItem from '../CartItem/CartItem';
+import './Cart.css'
 
 const Cart = ({cart,clearItem}) => {
     return (
@@ -9,7 +9,7 @@ const Cart = ({cart,clearItem}) => {
                 item={item}
                 />)
             }
-            <button>CHOOSE 1 FOR ME</button>
+            <button className='random-btn'>CHOOSE 1 FOR ME</button>
             <button className='clear-btn'  onClick={clearItem}>CHOOSE AGAIN</button>
         </div>
     );
