@@ -1,0 +1,18 @@
+.cart-images img{
+    width: 345px;
+    border-radius: 20px;
+  }
+.carts{
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    border: none;
+    background-color: #c4c4c4;
+    color:#663399;
+    cursor: pointer;
+}

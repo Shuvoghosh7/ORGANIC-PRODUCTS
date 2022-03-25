@@ -5,4 +5,13 @@
 .product-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
+@media only screen and (max-width: 688px) {
+    .product-container {
+        grid-template-columns: repeat(1,1fr)
+    }
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
