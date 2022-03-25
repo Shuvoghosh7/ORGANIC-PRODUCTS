@@ -1,0 +1,14 @@
+.cart-item{
+    display: flex;
+    align-items: center;
+}
+.cart-item img{
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.clear-btn{
+    color: #8A2BE2;
+    background-color: #c4c4c4;
+}

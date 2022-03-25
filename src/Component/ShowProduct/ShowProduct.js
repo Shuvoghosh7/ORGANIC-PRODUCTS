@@ -1,8 +1,8 @@
 import React from 'react';
+import { BsFillCartFill } from 'react-icons/bs';
 import './ShowProduct.css'
 
-const ShowProduct = ({product}) => {
-    console.log(product)
+const ShowProduct = ({product,handelAddTocart}) => {
     const{picture,name,price}=product
     return (
         <div className='carts'>
@@ -13,9 +13,12 @@ const ShowProduct = ({product}) => {
                 <h4>{name}</h4>
                 <p>Price:${price}</p>
             </div>
-            <button className='btn'>
-                <p>Add To Cart</p>
+            <div className='button-container'>
+            <button onClick={()=>handelAddTocart(product)}  className='btn'>
+            <p>Add To Cart </p>
             </button>
+            <h4><BsFillCartFill/></h4>
+            </div>
         </div>
     );
 };

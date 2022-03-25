@@ -5,13 +5,19 @@
 .carts{
     background-color: #c4c4c4;
     border-radius: 20px;
-    position: relative;
+    
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.button-container h1{
+  padding: 0px 15px;
+  color: #663399;
 }
 .btn{
-    position: absolute;
-    bottom: 0;
-    border-radius: 20px;
     border: none;
+    border-radius: 20px;
     background-color: #c4c4c4;
     color:#663399;
     cursor: pointer;
