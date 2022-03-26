@@ -1,5 +1,6 @@
 import './App.css';
 import Products from './Component/Products/Products';
+import Question from './Component/Question/Question';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>ORGANIC PRODUCTS SHOP</h1>
       </div>
       <Products/>
+      <Question/>
     </div>
   );
 }
