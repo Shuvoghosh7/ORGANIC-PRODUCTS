@@ -4,26 +4,24 @@ import './Cart.css'
 
 const Cart = ({cart,clearItem,}) => {
     const[random,setRandom]=useState([])
-    console.log(random)
     const chooseItem =(cart)=>{
         const randomNumber=cart[Math.floor(Math.random() * cart.length)]
         const newArray =[...random,randomNumber]
-        setRandom(newArray)
+        setRandom(newArray) 
     }
-   
     return (
-        <div>
+        <div className='CartItem'>
             {
                 cart.map(item => <CartItem
                 item={item}
                 key={item.id}
                 />)
             }
-            <div>
+            <div className='randomItem'>
             {
               random.map(randomItem => <p>
-                  {randomItem.name}
-                  </p>)
+                {randomItem.name}
+                </p>)
             }
             </div>
             
