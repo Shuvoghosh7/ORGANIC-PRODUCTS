@@ -10,11 +10,20 @@ const Products = () => {
 
     const handelAddTocart= (product)=>{
         const newCart=[...cart,product]
-        setCart(newCart)
+        if(newCart.length <= 4){
+            setCart(newCart)
+        }else if(newCart.includes(newCart)){
+            alert('all radey have')
+        }
+        else{
+            alert('Not prosible choose more then 4')
+        }
+        
+        
     }
     const clearItem =()=>{
-        const x=[[]]
-        setCart(x)
+        const removeItem=[]
+        setCart(removeItem)
     }
     useEffect(()=>{
         fetch('products.json')
