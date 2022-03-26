@@ -19,9 +19,9 @@ const Cart = ({cart,clearItem,}) => {
             }
             <div className='randomItem'>
             {
-              random.map(randomItem => <p>
+              random.map(randomItem => <h4>
                 {randomItem.name}
-                </p>)
+                </h4>)
             }
             </div>
             
