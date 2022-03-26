@@ -2,10 +2,9 @@ import { useState } from 'react';
 import CartItem from '../CartItem/CartItem';
 import './Cart.css'
 
-const Cart = ({cart,clearItem}) => {
+const Cart = ({cart,clearItem,}) => {
     
-    console.log(cart)
-    
+   
     return (
         <div>
             {
@@ -14,8 +13,10 @@ const Cart = ({cart,clearItem}) => {
                 key={item.id}
                 />)
             }
-           
-            <button onClick={()=>cart[Math.floor(Math.random() * cart.length)]} className='random-btn'>CHOOSE 1 FOR ME</button>
+            
+            
+            
+            <button  className='random-btn'>CHOOSE 1 FOR ME</button>
             <button className='clear-btn'  onClick={clearItem}>CHOOSE AGAIN</button>
         </div>
     );

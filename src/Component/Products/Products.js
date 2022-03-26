@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import CartItem from '../CartItem/CartItem';
 import ShowProduct from '../ShowProduct/ShowProduct';
 import './Products.css'
 
@@ -7,19 +8,14 @@ import './Products.css'
 const Products = () => {
     const[products,setProducts]=useState([])
     const[cart,setCart]=useState([])
-
     const handelAddTocart= (product)=>{
         const newCart=[...cart,product]
         if(newCart.length <= 4){
             setCart(newCart)
-        }else if(newCart.includes(newCart)){
-            alert('all radey have')
         }
         else{
             alert('Not prosible choose more then 4')
-        }
-        
-        
+        }  
     }
     const clearItem =()=>{
         const removeItem=[]
@@ -41,6 +37,7 @@ const Products = () => {
                        handelAddTocart={handelAddTocart}
                       /> )  
                     }
+                    
             </div>
             <div className="cart-container">
                 <h1>Selected item</h1>
